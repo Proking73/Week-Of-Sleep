@@ -1,0 +1,11 @@
+:root {
+    --lightMode: black;
+    --darkMode: white;
+    --fontWeight: 500;
+    /* Thinner font,
+    White,
+    Inverted Logo,
+    Favicon */
+    --navWidth: 5%;
+    /* Make nav transition to top  when media is under 1100px/950px and for smaller heights, make selectable dropside menus for side navbar*/
+}
