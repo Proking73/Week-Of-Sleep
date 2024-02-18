@@ -10,6 +10,7 @@ html, body {
 }
 body {
     font-family: "Titillium Web"; 
+    overflow: hidden;
 /* fix fonts */
 }
 
@@ -20,15 +21,39 @@ main {
     height: fit-content;
     color: var(--lightMode);
     background-color: var(--darkMode);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* Make custom scrollbar */
 }
+main > section {
+    height: 60vh;
+    width: 90%;
 
+    background-color: var(--darkMode);
+    
+    margin-top: 5vh;
+    padding: 0.5vh;
+
+    border: 0.2vmin solid var(--lightMode);
+    border-radius: 30px;
+
+    box-shadow: 0px 0px 2vmin black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main > section:last-child {
+    margin-bottom: 5vh;
+}
 nav {
     width: var(--navWidth);
     height: 100%;
     overflow: hidden;
     
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
 
@@ -50,13 +75,13 @@ nav > .logo {
     color: var(--lightMode);
     opacity: 60%;
     text-decoration: none;
-    font-size: clamp(1vmin, 2vw, 3.5vmax);
+    font-size: clamp(1vmin, 2vw, 3vmin);
     font-weight: 300;
     position: relative;
 }
 
 .extras {
-    width: 35%;
+    width: clamp(1vmin, 1.75vw, 3vmin);
     cursor: pointer;
     transition: transform 0.6s ease-in, opacity 0.3s ease-in;
 }
