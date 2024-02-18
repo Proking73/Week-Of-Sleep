@@ -1,4 +1,4 @@
-let theme = "dark";
+let theme = "light";
 // Make theme the state of the button switch (see left of drawings page)
 const variables = document.querySelector(":root");
 const logo = document.querySelector(".logo");
@@ -7,6 +7,7 @@ const logo = document.querySelector(".logo");
 if (theme == "light") {
     variables.style.setProperty('--lightMode', 'black');
     variables.style.setProperty('--darkMode', 'white');
+    document.querySelector("main").style.backgroundColor = " var(--darkMode)";
     // variables.style.setProperty('--fontWeight', '600'); CHANGE THIS VALUE INTO SOMETHING
     logo.src = "images/WhiteBG.png";
     console.log("lightmode");
@@ -15,6 +16,7 @@ if (theme == "light") {
     variables.style.setProperty('--lightMode', 'white');
     variables.style.setProperty('--darkMode', 'black');
     document.querySelector(".extras").style.filter = "invert(100%)";
+    document.querySelector("main").style.backgroundColor = " var(--darkModeBG)";
     // variables.style.setProperty('--fontWeight', '400'); CHANGE THIS VALUE INTO SOMETHING
     logo.src = "images/BlackBG.png";
     console.log("darkmode");
