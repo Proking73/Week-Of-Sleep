@@ -1,6 +1,7 @@
 :root {
     --lightMode: black;
     --darkMode: white;
+    --darkModeBG: hsl(0, 0%, 12.5%);
     --fontWeight: 500;
     /* Thinner font,
     White,
