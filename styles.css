@@ -38,7 +38,7 @@ main > section {
     border: 0.2vmin solid var(--lightMode);
     border-radius: 30px;
 
-    box-shadow: 0px 0px 2vmin 0.25vmin black;
+    box-shadow: 0px 0px 2vmin 0.25vmin hsla(0, 0%, 50%, 0.5);
 
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@ nav > .logo {
 }
 
 .extras {
-    width: clamp(1vmin, 1.75vw, 3vmin);
+    width: clamp(1vmin, 1.5vw, 2.75vmin);
     cursor: pointer;
     transition: transform 0.6s ease-in, opacity 0.3s ease-in;
 }
@@ -124,5 +124,6 @@ hr {
     body {
         background-color: red;
         /* Make navbar at top */
+        /* Separate style sheet for top navbar? */
     }
 }
