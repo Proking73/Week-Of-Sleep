@@ -119,11 +119,3 @@ hr {
     height: 0.1vh;
     border: 0.1vh solid grey;
 }
-
-@media only screen and (max-width:500px) {
-    body {
-        background-color: red;
-        /* Make navbar at top */
-        /* Separate style sheet for top navbar? */
-    }
-}
