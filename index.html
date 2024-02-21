@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
     <!-- Do meta stuff here -->
+
     <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="styles.css" media="only screen and (min-width: 425px)">
     <link rel="stylesheet" href="mobileStyles.css" media="only screen and (max-width: 425px)">
@@ -18,7 +20,12 @@
     <!-- Black/White favicon with javascript -->
 </head>
 <body> 
+    <button class="themeButton">Theme</button>
     <main>
+        <header class="locationContainer">
+            <span class="locationName">Home</span>
+        </header>
+
         <section class="day-1" id="Monday">
             <header class="dayOfTheWeek">Monday</header>
             <p class="date">February 12, 2024</p>
@@ -49,6 +56,10 @@
             <p class="howItWent"></p>
         </section>
 
+        <header class="locationContainer">
+            <span class="locationName">Connecticut</span>
+        </header>
+
         <section class="day-6" id="Saturday">
             <header class="dayOfTheWeek">Saturday</header>
             <p class="date">February 17, 2024</p>
@@ -62,6 +73,7 @@
         </section>
     </main>
     
+
     <nav>
         <!-- <a href="proking73.github.io/WeekOf-Sleep"> IMG LOGO INSIDE OF THIS </a> -->
         <img src="" alt="Week Of Sleep logo" class="logo">

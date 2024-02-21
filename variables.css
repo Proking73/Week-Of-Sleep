@@ -1,7 +1,8 @@
 :root {
+    color-scheme: light dark;
     --lightMode: black;
     --darkMode: white;
-    --darkModeBG: hsl(0, 0%, 12.5%);
+    --darkModeBG: hsl(0, 0%, 7.5%);
     --fontWeight: 500;
     /* Thinner font,
     White,

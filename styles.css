@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* transition: background-color 1s ease-in, color 1s ease-in, box-shadow 1s ease-in; */
 }
 html, body {
     height: 100%;
@@ -11,6 +12,33 @@ html, body {
 body {
     font-family: "Titillium Web";
 /* fix fonts */
+}
+
+.locationContainer {
+    text-transform: uppercase;
+    color: grey;
+    font-size: clamp(2vmin, 3vw, 4vmin);
+    
+    transform: translateY(2.5vh);
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.locationName {
+    z-index: 10;
+    background-color: white;
+    padding: 1vmin;
+    /* Fix bg color */
+}
+.locationContainer::before {
+    content: " ";
+    background-color: grey;
+    width: 85vw;
+    height: 0.2vmin;
+    position: absolute;
+    z-index: 0;
 }
 
 main {
