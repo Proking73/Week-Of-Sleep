@@ -8,7 +8,8 @@
     White,
     Inverted Logo,
     Favicon */
-    --navWidth: 5%;
+    --navWidth: 5vw;
+    --navHeight: 5vh;
     /* Make nav transition to top  when media is under 1100px/950px and for smaller heights, make selectable dropside menus for side navbar*/
     /* Make all wonky unsupported things like filter and scrollbar that need a webkit have a webkit and moz and oz and whatever */
     /* Test for safari */
