@@ -2,20 +2,20 @@ const themeButton = document.querySelector(".themeButton");
 const currentTheme = localStorage.getItem("theme");
 let theme = currentTheme;
 
+// window.addEventListener('load', () => {
+//     if (currentTheme == "undefined" || currentTheme == "light") {
+//         theme = "light";
+//     } else if (currentTheme == "dark") {
+//         theme = "dark";
+//     } else {
+//         theme = "light";
+//     }
+//     console.log(theme)
+// });
+
 function themeCheck() {
     console.log(`theme = "${theme}"\ncurrentTheme = "${currentTheme}".`)
 }
-themeCheck();
-
-document.body.addEventListener('load', () => {
-    if (currentTheme == "undefined" || currentTheme == "light") {
-        theme = "light";
-    } else if (currentTheme == "dark") {
-        theme = "dark";
-    } else {
-        theme = "light";
-    }
-});
 
 function themeInitiate() {
     if (currentTheme == "light") {
@@ -28,6 +28,7 @@ function themeInitiate() {
         });
         // variables.style.setProperty('--fontWeight', '600'); CHANGE THIS VALUE INTO SOMETHING
         logo.src = "images/WhiteBG.png"
+        theme = "light";
     
     } else if (currentTheme == "dark") {
         variables.style.setProperty('--lightMode', 'white');
@@ -41,11 +42,13 @@ function themeInitiate() {
         });
         // variables.style.setProperty('--fontWeight', '400'); CHANGE THIS VALUE INTO SOMETHING
         logo.src = "images/BlackBG.png";
-    
+        theme = "dark";
+
     }
 }
 
 themeInitiate();
+themeCheck();
 
 themeButton.addEventListener('click', () => {
     if (theme == "light") {
@@ -60,6 +63,7 @@ themeButton.addEventListener('click', () => {
         logo.src = "images/WhiteBG.png"
         
         theme = "dark";
+        console.log("light")
         
     } else if (theme == "dark") {
         variables.style.setProperty('--lightMode', 'white');
@@ -75,6 +79,7 @@ themeButton.addEventListener('click', () => {
         logo.src = "images/BlackBG.png";
         
         theme = "light";
+        console.log("dark")
         
     }
     
